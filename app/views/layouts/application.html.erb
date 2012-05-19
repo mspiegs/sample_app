@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Sample App | <%= @title%></title>
+		<title><%= title %></title>
 		<%= csrf_meta_tag %>
+		<%= render 'layouts/stylesheets' %>
 	</head>
 	<body>
-		<%= yield %>
+		<div>
+			<%= render 'layouts/header' %>
+			<div class="container">
+			<section class="round">
+				<%= yield %>
+			</section>
+			<%= render 'layouts/footer' %>
+			</div>
+		</div>
 	</body>
 </html>
