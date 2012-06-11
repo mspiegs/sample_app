@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.1'
 
+
 gem 'sqlite3'
 gem 'gravatar_image_tag', '0.1.0'
 
@@ -26,3 +27,4 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'jquery-ui-rails', '~> 0.4.1'

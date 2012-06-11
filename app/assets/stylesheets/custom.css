@@ -168,6 +168,7 @@ td.main {
 }
 
 td.sidebar {
+	height: 100px;
 	width: 30%;
 	padding: 1em;
 	vertical-align: top;
@@ -177,4 +178,26 @@ td.sidebar {
 .profile img.gravatar {
 	border: 1px solid #999;
 	margin-bottom: -15px;
+}
+
+div.field, div.actions {
+	margin-bottom: 10px;
+}
+
+div.panel,p.flip
+{
+margin:0px;
+padding:5px;
+text-align:center;
+background:#e5eecc;
+border:solid 1px #c3c3c3;
+}
+
+/* Error Messagses */
+
+.field_with_errors {
+	margin-top: 10px;
+	padding: 2px;
+	background-color: red;
+	display: table;
 }

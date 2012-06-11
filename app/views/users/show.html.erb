@@ -1,4 +1,6 @@
+<%= flash[:notice] %>
 <table class="profile" summary="Profile information">
+	
 	<tr>
 		<td class="main">
 			<h1>
@@ -6,9 +8,15 @@
 				<%= @user.name %>
 			</h1>
 		</td>
+		
 		<td class="sidebar round">
+			<div class="panel">
 			<strong>Name</strong> <%= @user.name %><br />
 			<strong>URL</strong> <%= link_to user_path(@user), @user %>
+			</div>
+			<p class="flip">Show/Hide</p>
+			
 		</td>
+		
 	<tr>
 </table>
